@@ -1,0 +1,118 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Slider.css" />
+  <link rel="stylesheet" href="swiper.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <style>
+    .swiper-container {
+      width: 100%;
+      padding-top: 60px;
+      padding-bottom: 80px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 450px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!---PROJECTS-->
+  <section id="project">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="sliderText">
+                    <img src="images/breakout-gameplay.png" height="179px" width="293px" />
+                  </div>
+                  <div class="content">
+                    <h4 class="heading">2D Breakout Game</h4>
+                    It is simple 2D Breakout Game formed using Javscript & canvas. It takes input of no. of lives from
+                    user itself.<br>
+                    <a href="https://github.com/saurabhhere/2D-Breakout-Game-Javascript" target="_blank"
+                      class="btn-slider">Source</a>
+                    <a href="https://saurabhhere.github.io/2D-Breakout-Game-Javascript/" target="_blank"
+                      class="btn-slider">View</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="sliderText">
+                    <img src="images/todo.png" height="179px" width="293px" />
+                  </div>
+                  <div class="content">
+                    <h4 class="heading">To-do List</h4>
+                    It is responsive to-do list formed using create-react-app & React Hooks, Reducer & Context. It
+                    stores that locally and re-render again when you come back to that page.<br>
+                    <a href="https://github.com/saurabhhere/Todo-react" target="_blank" class="btn-slider">Source</a>
+                    <a href="https://saurabhhere.github.io/Todo-react/" target="_blank" class="btn-slider">View</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="sliderText">
+                    <img src="images/flying-wing.jpg" height="179px" width="293px" />
+                  </div>
+                  <div class="content">
+                    <h4 class="heading">Flying Wing RC Plane </h4>
+                    It is a Remote Control Plane without any fuselage. All parts of the plane are attached to its wing itself.<br>
+                    <a href="https://drive.google.com/file/d/16uvg2ivC9pAT_0q0RCLMbAdp0salO8h8/view?usp=sharing" target="_blank" class="btn-slider">Certificate</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var preloader = document.getElementById("loading");
+    function myFunction() {
+      preloader.style.display = "none";
+    }
+
+    var swiper = new Swiper(".swiper-container", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+    });
+    reload();
+  </script>
+</body>
+
+</html>
