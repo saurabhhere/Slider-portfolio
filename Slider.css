@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+body {
+  height: 100%;
+  background-color: #1c2237;
+}
 .heading {
   font-family: "Montserrat", sans-serif;
   margin: 15px auto;
@@ -14,6 +18,7 @@
 
 .swiper-container {
     width: 100%;
+    padding-bottom: 50px;
   }
 
   .btn-slider {
@@ -34,7 +39,7 @@
   }
 
   #project{
-    padding: 6% 2%;
+    padding: 6% 2% 15% 2%;
   }
  
   #project .container{
